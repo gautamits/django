@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Available questions</title>
-</head>
-<body>
+{% extends 'polls/base.html' %}
+{% block main_content %}
 
 {% if latest_questions %}
     <ul>
@@ -14,5 +10,5 @@
 {% else %}
     <p>You dont have any questions/Please add some.</p>
 {% endif %}
-</body>
-</html>
+
+{% endblock %}
